@@ -1,0 +1,1 @@
+<?define("TEMPORARY_CACHE", "ARtmfAYHbmMMdAgebRtnG20A");?>
