@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669886918';
-$dateexpire = '001705886918';
+$datecreate = '001669976149';
+$dateexpire = '001705976149';
 $ser_content = 'a:2:{s:7:"CONTENT";s:888:"
 	<div class="swiper-slide">
 		<div class="box">

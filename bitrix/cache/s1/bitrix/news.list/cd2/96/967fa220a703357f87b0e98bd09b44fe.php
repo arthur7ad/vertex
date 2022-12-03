@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669772917';
-$dateexpire = '001705772917';
-$ser_content = 'a:2:{s:7:"CONTENT";s:11141:"
+$datecreate = '001669893116';
+$dateexpire = '001705893116';
+$ser_content = 'a:2:{s:7:"CONTENT";s:11419:"
             <li>
             <figure class="light">
                 <img src="/local/templates/verter/imgs/product/img1.png" alt="WMS + ТСД" class="img">
@@ -36,7 +36,7 @@ $ser_content = 'a:2:{s:7:"CONTENT";s:11141:"
                 <figcaption>
                     <div class="text">
                         <h2>Центр мониторинга</h2>
-                        <p>/verter/detail.php?ID=14</p>
+                        <p>Система для вывода на внешние мониторы статистической и динамической информации</p>
                     </div>
                     <a href="/verter/detail.php?ID=14" class="more">подробнее</a>
                 </figcaption>

@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669772917';
-$dateexpire = '001705772917';
-$ser_content = 'a:2:{s:7:"CONTENT";s:11349:"
+$datecreate = '001669893116';
+$dateexpire = '001705893116';
+$ser_content = 'a:2:{s:7:"CONTENT";s:11510:"
             <li>
             <figure class="dark">
                 <img src="/local/templates/verter/imgs/production/1.png" alt="MES" class="img">

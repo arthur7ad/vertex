@@ -13,25 +13,25 @@ $APPLICATION->SetTitle("Главная страница");
             <div class="mt-4 mt-lg-5 swiper-main-prods">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="box">
+                        <a href="/storage/"><div class="box">
                             <h3>Склад</h3>
                             <img src="<?=SITE_TEMPLATE_PATH?>/imgs/box-stock.png" alt="Склад" class="element-animation">
-                            <a class="more" href="/">Подробнее</a>
-                        </div>
+                            <span class="more">Подробнее</span>
+                        </div></a>
                     </div>
                     <div class="swiper-slide">
-                        <div class="box">
+                        <a href="/showroom/"><div class="box">
                             <h3>Продажи</h3>
                             <img src="<?=SITE_TEMPLATE_PATH?>/imgs/shirt-v.png" alt="Продажи" class="element-animation">
-                            <a class="more" href="/">Подробнее</a>
-                        </div>
+                            <span class="more">Подробнее</span>
+                            </div></a>
                     </div>
                     <div class="swiper-slide">
-                        <div class="box">
+                        <a href="/production/"><div class="box">
                             <h3>Производство</h3>
                             <img src="<?=SITE_TEMPLATE_PATH?>/imgs/kaska.png" alt="Производство" class="element-animation">
-                            <a class="more" href="/">Подробнее</a>
-                        </div>
+                            <span class="more">Подробнее</span>
+                            </div></a>
                     </div>
                     <!-- <?$APPLICATION->IncludeComponent("bitrix:catalog.section.list", "sections", Array(
                         "COMPONENT_TEMPLATE" => ".default",

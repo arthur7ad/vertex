@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669889634';
-$dateexpire = '001705889634';
+$datecreate = '001669976149';
+$dateexpire = '001705976149';
 $ser_content = 'a:2:{s:7:"CONTENT";s:3251:"
             <div>
             <figure class="gradient">

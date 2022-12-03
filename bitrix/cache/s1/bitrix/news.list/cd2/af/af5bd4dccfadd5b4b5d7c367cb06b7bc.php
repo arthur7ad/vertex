@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669772917';
-$dateexpire = '001705772917';
-$ser_content = 'a:2:{s:7:"CONTENT";s:6333:"
+$datecreate = '001669893116';
+$dateexpire = '001705893116';
+$ser_content = 'a:2:{s:7:"CONTENT";s:6434:"
     <!-- <div class="flex flex-col text-center justify-around sm:w-[70px] md:w-[200px] h-fit sm:h-[150px] ">
         <div class="flex justify-center ">
             <img class="verter-show" src="/upload/iblock/251/bmu8ulewq8378bcc8aceeg3qoomz2b9f/clothes.png" alt="Одежда">

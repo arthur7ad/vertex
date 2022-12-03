@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669772917';
-$dateexpire = '001705772917';
-$ser_content = 'a:2:{s:7:"CONTENT";s:3210:"
+$datecreate = '001669893117';
+$dateexpire = '001705893117';
+$ser_content = 'a:2:{s:7:"CONTENT";s:3251:"
             <div>
             <figure class="gradient">
                 <img src="/upload/iblock/14d/3n20d0s7wtzdk3k0logtubhf50lxa4dx/box_1.png" alt="Маркировка остатков, ивентаризация">

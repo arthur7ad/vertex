@@ -61,25 +61,25 @@ if (hoverDivs){
 
 
 /* fixed menu */
-// const stickyBlocks = document.getElementsByClassName('sticky-block')
-// if (stickyBlocks){
-//   const arrStickyBlocks = Array.from(stickyBlocks)
-//     arrStickyBlocks.forEach(item => {
-//       let box = item.getBoundingClientRect()
-//       let offsetElem = box.top + window.pageYOffset
-//       console.log('offsetElem'+offsetElem)
-//       window.addEventListener('scroll', function() {
-//         let scrollTop = window.scrollY 
-//         console.log('scrollTop'+scrollTop)
-//         if (scrollTop > offsetElem) {
-//           item.classList.add("sticky")
-//         } else {
-//           item.classList.remove("sticky")
-//         }
-//       });
-//     })
-  
-// }
+const stickyBlocks = document.getElementsByClassName('sticky-block')
+if (stickyBlocks){
+  const arrStickyBlocks = Array.from(stickyBlocks)
+  arrStickyBlocks.forEach(item => {
+    let startId = item.dataset.start
+    let endId = item.dataset.end
+    let start = document.getElementById(startId).getBoundingClientRect().top + window.pageYOffset
+    let end = document.getElementById(endId).getBoundingClientRect().top + window.pageYOffset
+    console.log('start'+start)
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.scrollY 
+      if (scrollTop > start && scrollTop < end) {
+        item.classList.add("sticky")
+      } else {
+        item.classList.remove("sticky")
+      }
+    });
+  })
+}
 
 
 const mobileMenu = document.getElementById('offcanvasMenu')

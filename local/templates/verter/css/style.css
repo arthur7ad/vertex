@@ -222,7 +222,7 @@ select {
   cursor: pointer;
   right: .5em;
   width: 1.5em;
-  height: 50%;
+  height: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,18 +235,20 @@ select {
 }
 
 .input-number-group button img {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .input-number-group button.plus {
-  top: 0px;
+  top: 9%;
+  height: 43%;
 }
 
 .input-number-group button.minus {
-  bottom: 0px;
+  height: 43%;
+  bottom: 5%;
 }
 
 button {
@@ -618,7 +620,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: .25em;
+  padding-top: .15em;
   margin-top: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -733,7 +735,7 @@ header.inner {
 }
 
 header.inner nav ul a:hover, header.inner nav ul a:focus, header.inner nav ul a:active, header.inner nav ul a.active {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 
 header .logo {
@@ -1598,6 +1600,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 0px;
+  padding-top: 0.2em;
   font-weight: 700;
   font-size: 1em;
   text-transform: uppercase;
@@ -1700,6 +1703,9 @@ main {
   left: 0px;
   width: 100%;
   z-index: 100;
+  -webkit-box-shadow: 0px 3px 100px rgba(0, 59, 157, 0.21);
+          box-shadow: 0px 3px 100px rgba(0, 59, 157, 0.21);
+  font-size: 1em;
 }
 
 @media (max-width: 991px) {
@@ -2123,6 +2129,11 @@ main {
   position: relative;
   border-radius: 1.2em;
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+          mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   counter-increment: my-awesome-counter;
   grid-column: span 1;
   grid-row: span 1;
@@ -2231,7 +2242,7 @@ main {
 
 @media (max-width: 575px) {
   .grid-0 .card-capability .description, .grid-1 .card-capability .description, .grid-2 .card-capability .description {
-    padding: .5em;
+    font-size: .8em;
   }
 }
 
@@ -2255,6 +2266,14 @@ main {
 
 .grid-0 .card-capability .description .btn-1, .grid-1 .card-capability .description .btn-1, .grid-2 .card-capability .description .btn-1 {
   padding: 0.6em 1.4em;
+  font-size: 1rem;
+}
+
+@media (max-width: 575px) {
+  .grid-0 .card-capability .description .btn-1, .grid-1 .card-capability .description .btn-1, .grid-2 .card-capability .description .btn-1 {
+    font-size: .8rem;
+    padding: 0.3em 1em 0.4em;
+  }
 }
 
 .grid-0 .card-capability:hover .description, .grid-1 .card-capability:hover .description, .grid-2 .card-capability:hover .description {
@@ -2379,7 +2398,7 @@ main {
 }
 
 .grid-2 .card-capability figure {
-  background-color: #0a2be9;
+  background-color: #0052db;
   position: relative;
   width: 100%;
   height: 100%;
@@ -2499,6 +2518,11 @@ main {
   border-radius: 1em;
   -webkit-box-shadow: 0px 3px 100px rgba(0, 59, 157, 0.21);
           box-shadow: 0px 3px 100px rgba(0, 59, 157, 0.21);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+          mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   padding: var(--case-pad);
   display: -ms-grid;
   display: grid;
@@ -2709,6 +2733,11 @@ main {
   border-radius: 1em;
   -webkit-box-shadow: 0px 3px 100px rgba(0, 59, 157, 0.21);
           box-shadow: 0px 3px 100px rgba(0, 59, 157, 0.21);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+          mask-image: -webkit-radial-gradient(white, black);
+  isolation: isolate;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   height: var(--case-h);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3367,6 +3396,10 @@ main {
   }
 }
 
+.sec-base .swiper-1 .swiper-pagination {
+  bottom: 2em;
+}
+
 .sec-base .icon {
   width: 4em;
   height: 4em;
@@ -3560,8 +3593,8 @@ main {
 
 .sec-main-base .container .main-base-grid div p {
   margin-top: 1em;
-  font-weight: 500;
-  line-height: 130%;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .sec-video {

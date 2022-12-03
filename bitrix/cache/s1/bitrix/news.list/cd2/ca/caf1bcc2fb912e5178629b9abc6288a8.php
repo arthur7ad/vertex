@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669772917';
-$dateexpire = '001705772917';
-$ser_content = 'a:2:{s:7:"CONTENT";s:725:"
+$datecreate = '001669893116';
+$dateexpire = '001705893116';
+$ser_content = 'a:2:{s:7:"CONTENT";s:741:"
     <div class="swiper-slide">
                 <img src="/upload/iblock/b64/2dbz6wx5giss5xg7ozwpzbtju5nv82l4/rostech.svg" alt="logo">
     </div>

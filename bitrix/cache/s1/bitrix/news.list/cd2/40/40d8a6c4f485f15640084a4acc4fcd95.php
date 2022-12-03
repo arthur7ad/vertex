@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669772917';
-$dateexpire = '001705772917';
-$ser_content = 'a:2:{s:7:"CONTENT";s:1256:"
+$datecreate = '001669893117';
+$dateexpire = '001705893117';
+$ser_content = 'a:2:{s:7:"CONTENT";s:1267:"
             <div class="col-sm-8 col-lg-6">
             <iframe width="100%" height="320" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h5>Работы, дополненая реальность и ТСД - технологии для бизнеса. Zebra Tehnologies | Клеверенс</h5>

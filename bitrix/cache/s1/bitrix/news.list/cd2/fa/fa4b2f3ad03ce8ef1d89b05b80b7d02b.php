@@ -1,8 +1,8 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001669772917';
-$dateexpire = '001705772917';
-$ser_content = 'a:2:{s:7:"CONTENT";s:989:"
+$datecreate = '001669893117';
+$dateexpire = '001705893117';
+$ser_content = 'a:2:{s:7:"CONTENT";s:1011:"
     <li>
         <div class="news-preview">
             <h5>Интегрирован Martech ALPHA</h5>
