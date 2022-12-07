@@ -414,7 +414,7 @@ div.bx-auth-form label.bx-label {color:#3E65B2;}
 div.bx-auth-form input.bx-auth-input-text {width:150px;}
 
 /*Error text*/
-font.errortext {color:red !important;}
+font.errortext {color:red;}
 
 /* Structure dialog */
 div.bx-struct-item {clear:both; border:1px solid #F5F9F9;}

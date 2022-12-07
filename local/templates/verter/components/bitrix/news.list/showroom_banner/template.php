@@ -28,7 +28,7 @@ $this->setFrameMode(true);
                 <div class="box">
                     <h2><?=$arItem['PROPERTIES']['title_block']['VALUE']?></h2>
                      <p><?=$arItem['PREVIEW_TEXT']?></p>
-                    <button class="btn-1 mt-3 mt-md-5" href="<?=$arItem['PROPERTIES']['title_block']['VALUE']?>">подробнее</button>
+                    <a class="btn-1 mt-3 mt-md-5" style="margin-bottom: -1.4em;" href="<?=$arItem['PROPERTIES']['link']['VALUE']?>">подробнее</a>
                 </div>
             </div>
         </div>

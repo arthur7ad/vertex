@@ -28,7 +28,7 @@ return array (
   array (
     'value' => 
     array (
-      'debug' => false,
+      'debug' => TRUE,
       'handled_errors_types' => 4437,
       'exception_errors_types' => 4437,
       'ignore_silence' => false,

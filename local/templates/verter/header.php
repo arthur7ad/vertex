@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/style.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/art.css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/fonts/stylesheet.css" rel="stylesheet"/>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/jquery.js"></script>
 </head>
 
 <body>
