@@ -1,0 +1,20 @@
+
+
+/* Start:/local/components/verter/main.feedback/templates/.default/style.css?1670330366458*/
+div.mfeedback {}
+div.mf-name, div.mf-email, div.mf-captcha, div.mf-message {width:80%; padding-bottom:0.4em;}
+div.mf-name input, div.mf-email input {width:60%;}
+div.mf-message textarea {width: 60%;}
+span.mf-req {color:white;}
+div.mf-ok-text {color:white; font-weight:bold; padding-bottom: 1em;}
+.errortext {color:white!important;}
+.btn-1 {
+    background-color: #fff;
+    color: #0160fe!important;
+}
+.btn-1:hover {
+    color: #fff!important;
+}
+
+/* End */
+/* /local/components/verter/main.feedback/templates/.default/style.css?1670330366458 */

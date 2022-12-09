@@ -1,0 +1,38 @@
+
+
+/* Start:/local/components/verter/catalog.section/templates/scope/style.css?1670345477408*/
+#comp_eb5850425a2bffc5498c6bb9c5c69cdd {
+    --cell-height: 315px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: var(--cell-height);
+    grid-template-rows: var(--cell-height);
+    grid-auto-rows: var(--cell-height);
+    grid-auto-flow: row dense;
+    gap: 1em 1em;
+    counter-reset: my-awesome-counter;
+}
+/* End */
+
+
+/* Start:/local/components/verter/main.feedback/templates/.default/style.css?1670330366458*/
+div.mfeedback {}
+div.mf-name, div.mf-email, div.mf-captcha, div.mf-message {width:80%; padding-bottom:0.4em;}
+div.mf-name input, div.mf-email input {width:60%;}
+div.mf-message textarea {width: 60%;}
+span.mf-req {color:white;}
+div.mf-ok-text {color:white; font-weight:bold; padding-bottom: 1em;}
+.errortext {color:white!important;}
+.btn-1 {
+    background-color: #fff;
+    color: #0160fe!important;
+}
+.btn-1:hover {
+    color: #fff!important;
+}
+
+/* End */
+/* /local/components/verter/catalog.section/templates/scope/style.css?1670345477408 */
+/* /local/components/verter/main.feedback/templates/.default/style.css?1670330366458 */
