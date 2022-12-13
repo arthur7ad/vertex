@@ -48,3 +48,9 @@
 .scope-msg {
     grid-column: 1/12;
 }
+.sec-callback  .btn-1{  color: #0160fe!important;}
+
+.sec-callback .btn-1:hover, .sec-callback .btn-1:focus, .sec-callback .btn-1:active, .sec-callback .btn-1.active {
+    background-color: #0A4AB6;
+    color: #fff!important;
+}

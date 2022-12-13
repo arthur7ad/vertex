@@ -47,7 +47,7 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
                             <h4 class="ms-3 mb-0"><?= $arItem['PROPERTIES']['title1']['VALUE'] ?></h4>
                         </div>
                         <p>
-                            <?= $arItem['PROPERTIES']['about1']['VALUE']['TEXT']; ?>  </p>
+                            <?= htmlspecialcharsBack($arItem['PROPERTIES']['about1']['VALUE']['TEXT']); ?>  </p>
                         <div class="d-flex align-items-center mb-2 mb-xl-3 mt-4 mt-xl-5">
                             <?
                             $res2 = CIBlockElement::GetProperty($arItem['IBLOCK_ID'], $arItem['ID'], "sort", "asc", array("CODE" => "img2"));
@@ -66,7 +66,7 @@ $this->AddDeleteAction($arItem['ID'], $arItem['DELETE_LINK'], CIBlock::GetArrayB
                             <h4 class="ms-3 mb-0"><?= $arItem['PROPERTIES']['title2']['VALUE'] ?></h4>
                         </div>
                         <p>
-                            <?= $arItem['PROPERTIES']['about2']['VALUE']['TEXT']; ?>     </p>
+                            <?= htmlspecialcharsBack($arItem['PROPERTIES']['about2']['VALUE']['TEXT']); ?>     </p>
                         <a href="<?= $arItem['PROPERTIES']['link']['VALUE'] ?>" class="more"><span>подробнее</span></a>
                     </div>
                 </div>
