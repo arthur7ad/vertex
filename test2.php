@@ -1,12 +1,14 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("");
-?><br>
-    <br>
-    <br>
-    <br>
-    <br>
-<? $APPLICATION->IncludeComponent(
+?>
+<?
+
+$id = intval($_GET['eid']);
+global $arNewsFilter;
+$arNewsFilter = array("ID" => $id);
+
+$APPLICATION->IncludeComponent(
     "bitrix:news.list",
     "cases-detailed",
     array(
@@ -30,7 +32,7 @@ $APPLICATION->SetTitle("");
         "DISPLAY_PREVIEW_TEXT" => "Y",
         "DISPLAY_TOP_PAGER" => "N",
         "FIELD_CODE" => array("", ""),
-        "FILTER_NAME" => "",
+        "FILTER_NAME" => "arNewsFilter",
         "HIDE_LINK_WHEN_NO_DETAIL" => "N",
         "IBLOCK_ID" => "21",
         "IBLOCK_TYPE" => "products",
@@ -48,7 +50,7 @@ $APPLICATION->SetTitle("");
         "PARENT_SECTION" => "",
         "PARENT_SECTION_CODE" => "",
         "PREVIEW_TRUNCATE_LEN" => "",
-        "PROPERTY_CODE" => array("opis_banner", "logo", "title1", "opis1", "title2", "opis2", "showcaz", "title_table1", "title_table2", "opis_table1", "opis_table2", "table1", "table2", "showprod", "product1_img", "product2_img", "product3_img", "product4_img", "product5_img", "product6_img", "product1_title", "product2_title", "product3_title", "product4_title", "product5_title", "product6_title", "product1_opis", "product2_opis", "product3_opis", "product4_opis", "product5_opis", "product6_opis", "product1_link", "product2_link", "product3_link", "product4_link", "product5_link", "product6_link", "showrev", "name_review1", "status_review1", "link_review1", "foto_review1", "review1", "name_review2", "status_review2", "link_review2", "foto_review2", "review2", "name_review3", "status_review3", "link_review3", "foto_review3", "review3", "name_review4", "status_review4", "link_review4", "foto_review4", "review4", "name_review5", "status_review5", "link_review5", "foto_review5", "review5", "opisstep", "namestep1", "opisstep1", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",),
+        "PROPERTY_CODE" => array("opis_banner", "logo", "title1", "opis1", "title2", "opis2", "showcaz", "title_table1", "title_table2", "opis_table1", "opis_table2", "table1", "table2", "showprod", "product1_img", "product2_img", "product3_img", "product4_img", "product5_img", "product6_img", "product1_title", "product2_title", "product3_title", "product4_title", "product5_title", "product6_title", "product1_opis", "product2_opis", "product3_opis", "product4_opis", "product5_opis", "product6_opis", "product1_link", "product2_link", "product3_link", "product4_link", "product5_link", "product6_link", "showrev", "name_review1", "status_review1", "link_review1", "foto_review1", "review1", "name_review2", "status_review2", "link_review2", "foto_review2", "review2", "name_review3", "status_review3", "link_review3", "foto_review3", "review3", "name_review4", "status_review4", "link_review4", "foto_review4", "review4", "name_review5", "status_review5", "link_review5", "foto_review5", "review5", "opisstep", "namestep1", "opisstep1", "showeffect", "effectimg1", "effectimg2", "effectimg3", "effectimg4", "effectimg5", "effectimg6", "effectimg7", "effectimg8", "effectimg9", "effectopis1", "effectopis2", "effectopis3", "effectopis4", "effectopis5", "effectopis6", "effectopis7", "effectopis8", "effectopis9", "showresult", "resultopis", "resultimg1", "resultimg2", "resultimg3", "resultimg4", "resultimg5", "resultimg6", "resultimg7", "resultimg8", "resultimg9", "resultimg10", "resultopis1", "resultopis2", "resultopis3", "resultopis4", "resultopis5", "resultopis6", "resultopis7", "resultopis8", "resultopis9", "resultopis10", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",),
         "SET_BROWSER_TITLE" => "N",
         "SET_LAST_MODIFIED" => "N",
         "SET_META_DESCRIPTION" => "N",
@@ -62,7 +64,4 @@ $APPLICATION->SetTitle("");
         "SORT_ORDER2" => "ASC",
         "STRICT_SECTION_CHECK" => "N"
     )
-); ?><br>
-    <br>
-    <br>
-    <br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+); ?><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

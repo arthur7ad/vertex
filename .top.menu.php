@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Продукты", 
-		"showroom/", 
+		"/#sproducts", 
 		Array(), 
 		Array(), 
 		"" 

@@ -70,7 +70,7 @@ if($count==0) {
                             <img src="<?= $logo_company ?>" alt="<?= $arItem['NAME'] ?>">
                         </div>
                     <? } ?>
-                    <a href="<?= $arItem['PROPERTIES']['link']['VALUE'] ?>" class="more"><span>подробнее</span></a>
+                    <a href="/case/<?= $arItem['PROPERTIES']['link']['VALUE'] ?>" class="more"><span>подробнее</span></a>
 
                 </div>
         </li>
@@ -98,7 +98,7 @@ if($count==0) {
                         </div>
                     <? } ?>
                     <div>
-                        <a href="<?= $arItem['PROPERTIES']['link']['VALUE'] ?>" class="more"><span>подробнее</span></a>
+                        <a href="/case/<?= $arItem['PROPERTIES']['link']['VALUE'] ?>" class="more"><span>подробнее</span></a>
                     </div>
                 </div>
             </div>

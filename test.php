@@ -1,13 +1,9 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
-?><br>
- <br>
- <br>
- <br>
- <?$APPLICATION->IncludeComponent(
+?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
-	"products_el",
+	"slider",
 	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -19,7 +15,7 @@ $APPLICATION->SetTitle("");
 		"CACHE_FILTER" => "N",
 		"CACHE_GROUPS" => "Y",
 		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "N",
+		"CACHE_TYPE" => "A",
 		"CHECK_DATES" => "Y",
 		"DETAIL_URL" => "",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
@@ -31,7 +27,7 @@ $APPLICATION->SetTitle("");
 		"FIELD_CODE" => array("",""),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "20",
+		"IBLOCK_ID" => "22",
 		"IBLOCK_TYPE" => "products",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
@@ -47,7 +43,7 @@ $APPLICATION->SetTitle("");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array("link","",""),
+        "PROPERTY_CODE" => array("img1", "img2","img3","img4","img5","img6","img7","img8","img9","img10",),
 		"SET_BROWSER_TITLE" => "N",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "N",
@@ -61,5 +57,4 @@ $APPLICATION->SetTitle("");
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N"
 	)
-);?><br>
- <br><?  require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?><br><?  require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

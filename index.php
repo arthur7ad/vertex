@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Главная страница");
             "PATH" => "/include/banner.php"
         )
     );?>
-            <div class="mt-4 mt-lg-5 swiper-main-prods">
+            <div class="mt-4 mt-lg-5 swiper-main-prods"  id="sproducts" name="sproducts">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="/storage/"><div class="box">
