@@ -733,20 +733,7 @@ $this->setFrameMode(true);
             </ul>
         </section>
     <?php } ?>
-    <?php if ($arItem['PROPERTIES']['showform']['VALUE_XML_ID'] == 1) { ?>
-    <? $APPLICATION->IncludeComponent(
-        "verter:main.feedback",
-        "form-case",
-        array(
-            "AJAX_MODE" => "N",
-            "EMAIL_TO" => "test@test.ru",
-            "EVENT_MESSAGE_ID" => array(),
-            "OK_TEXT" => "Ваше сообщение отправлено.",
-            "REQUIRED_FIELDS" => array("NAME", "EMAIL", "PHONE"),
-            "USE_CAPTCHA" => "N"
-        )
-    ); ?>
-    <?php } ?>
+
 <? } ?>
 <?
 $this->__component->arResult["CACHED_TPL"] = @ob_get_contents();

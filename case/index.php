@@ -64,4 +64,20 @@ $APPLICATION->IncludeComponent(
         "SORT_ORDER2" => "ASC",
         "STRICT_SECTION_CHECK" => "N"
     )
-); ?><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+); ?>
+
+    <? $APPLICATION->IncludeComponent(
+        "verter:main.feedback",
+        "form-case",
+        array(
+            "AJAX_MODE" => "Y",
+            "EMAIL_TO" => "test@test.ru",
+            "EVENT_MESSAGE_ID" => array(),
+            "OK_TEXT" => "Ваше сообщение отправлено.",
+            "REQUIRED_FIELDS" => array("NAME", "EMAIL", "PHONE"),
+            "USE_CAPTCHA" => "N"
+        )
+    ); ?>
+
+
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
