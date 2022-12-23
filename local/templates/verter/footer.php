@@ -19,7 +19,12 @@
         <div class="container">
             <div class="f-menu">
                 <div>
-                    <h6 class="main-color"><a href="/">Склад <img class="icon" src="<?=SITE_TEMPLATE_PATH?>/imgs/icons/arrow.svg" alt="arrow"></a></h6>
+                    <h6 class="main-color"><a href="/">Склад <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                            </svg></a></h6>
                     <nav>
                         <ul class="list-unstyled">
                             <?$APPLICATION->IncludeComponent(
@@ -45,7 +50,12 @@
                     </nav>
                 </div>
                 <div>
-                    <h6 class="main-color"><a href="/">Продажи <img class="icon" src="<?=SITE_TEMPLATE_PATH?>/imgs/icons/arrow.svg" alt="arrow"></a></h6>
+                    <h6 class="main-color"><a href="/">Продажи <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                            </svg></a></h6>
                     <nav>
                         <ul class="list-unstyled">
                             <?$APPLICATION->IncludeComponent(
@@ -71,7 +81,12 @@
                     </nav>
                 </div>
                 <div>
-                    <h6 class="main-color"><a href="/">Производство <img class="icon" src="<?=SITE_TEMPLATE_PATH?>/imgs/icons/arrow.svg" alt="arrow"></a></h6>
+                    <h6 class="main-color"><a href="/">Производство <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                            </svg></a></h6>
                     <nav>
                         <ul class="list-unstyled">
                             <?$APPLICATION->IncludeComponent(
@@ -97,7 +112,12 @@
                     </nav>
                 </div>
                 <div>
-                    <h6 class="main-color">О Verter <img class="icon" src="<?=SITE_TEMPLATE_PATH?>/imgs/icons/arrow.svg" alt="arrow"></h6>
+                    <h6 class="main-color">О Verter <svg class="icon" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <line x1="15" y1="16" x2="19" y2="12"></line>
+                                <line x1="15" y1="8" x2="19" y2="12"></line>
+                            </svg></h6>
                     <nav>
                         <ul class="list-unstyled">
                             <?$APPLICATION->IncludeComponent(

@@ -44,20 +44,52 @@
     grid-column: 1/12;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
-    grid-row: 1;}
+    grid-row: 1;
+}
+
 .scope-msg {
     grid-column: 1/12;
 }
-.sec-callback  .btn-1{  color: #0160fe!important;}
+
+.sec-callback .btn-1 {
+    color: #0160fe !important;
+}
 
 .sec-callback .btn-1:hover, .sec-callback .btn-1:focus, .sec-callback .btn-1:active, .sec-callback .btn-1.active {
     background-color: #0A4AB6;
-    color: #fff!important;
+    color: #fff !important;
 }
 
-.grid-2 .card-capability figure figcaption h6{
+.grid-2 .card-capability figure figcaption h6 {
     width: 100%;
     font-weight: 800;
     font-size: 2.5em;
-    margin:0;
+    margin: 0;
 }
+
+div.mf-ok-text {
+    color: white;
+}
+
+.mminus {
+    padding-bottom: 0;
+}
+
+.sec-function-info ul {
+    padding-left: 0px;
+}
+
+.sec-function-info ul li {
+    margin-bottom: 1.5em;
+}
+
+.sec-function-info ul li::marker {
+    color: #0160fe;
+    font-weight: bold;
+}
+.swiper-func { padding:5rem 0 4rem 0;}
+.mt-3-minus { margin-top: -3rem;     padding-bottom: 1rem;}
+
+.funct-mar{ padding: 2em 2em 0 2em;}
+.funct-mar table{ margin: -2em -2em 0 -2em;}
+.fix { position:sticky; top:0;}

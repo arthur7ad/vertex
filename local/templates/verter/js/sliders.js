@@ -76,3 +76,23 @@ const swiper5= new Swiper('.swiper-gallery', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const swiper6= new Swiper('.swiper-func', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+const swiper7= new Swiper('.swiper-func-3', {
+  loop: true,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

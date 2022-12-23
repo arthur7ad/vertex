@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news.list",
-	"slider",
+	"functions",
 	Array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -27,7 +27,7 @@ $APPLICATION->SetTitle("");
 		"FIELD_CODE" => array("",""),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "22",
+		"IBLOCK_ID" => "24",
 		"IBLOCK_TYPE" => "products",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
@@ -43,7 +43,7 @@ $APPLICATION->SetTitle("");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-        "PROPERTY_CODE" => array("img1", "img2","img3","img4","img5","img6","img7","img8","img9","img10",),
+		"PROPERTY_CODE" => array("","img1","img2","img3","img4","img5","img6","img7","img8","img9","img10",""),
 		"SET_BROWSER_TITLE" => "N",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "N",
@@ -56,5 +56,30 @@ $APPLICATION->SetTitle("");
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",
 		"STRICT_SECTION_CHECK" => "N"
+	)
+);?><br>
+ <br>
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.section.list",
+	"",
+	Array(
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"COUNT_ELEMENTS" => "Y",
+		"COUNT_ELEMENTS_FILTER" => "CNT_ACTIVE",
+		"FILTER_NAME" => "sectionsFilter",
+		"IBLOCK_ID" => "24",
+		"IBLOCK_TYPE" => "products",
+		"SECTION_CODE" => "",
+		"SECTION_FIELDS" => array("",""),
+		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_URL" => "",
+		"SECTION_USER_FIELDS" => array("",""),
+		"SHOW_PARENT_NAME" => "Y",
+		"TOP_DEPTH" => "2",
+		"VIEW_MODE" => "LINE"
 	)
 );?><br><?  require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
