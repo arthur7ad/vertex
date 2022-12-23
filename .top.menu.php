@@ -16,7 +16,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Функции", 
-		"#", 
+		"/functions", 
 		Array(), 
 		Array(), 
 		"" 

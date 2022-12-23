@@ -8,6 +8,14 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/mobileapp/jn.php',
     'SORT' => 100,
   ),
+  4 => 
+  array (
+    'CONDITION' => '#^/functions/#',
+    'RULE' => 'eid=$1',
+    'ID' => '',
+    'PATH' => '/functions/index.php',
+    'SORT' => 100,
+  ),
   3 => 
   array (
     'CONDITION' => '#^/function/#',
@@ -32,12 +40,4 @@ $arUrlRewrite=array (
     'PATH' => '/case/index.php',
     'SORT' => 100,
   ),
-    4 =>
-        array (
-            'CONDITION' => '#^/functions/#',
-            'RULE' => 'eid=$1',
-            'ID' => '',
-            'PATH' => '/functions/index.php',
-            'SORT' => 100,
-        ),
 );

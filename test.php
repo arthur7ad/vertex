@@ -1,85 +1,231 @@
-<?
-require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("");
-?><?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"functions",
-	Array(
-		"ACTIVE_DATE_FORMAT" => "d.m.Y",
-		"ADD_SECTIONS_CHAIN" => "Y",
-		"AJAX_MODE" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "Y",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"CHECK_DATES" => "Y",
-		"DETAIL_URL" => "",
-		"DISPLAY_BOTTOM_PAGER" => "Y",
-		"DISPLAY_DATE" => "Y",
-		"DISPLAY_NAME" => "Y",
-		"DISPLAY_PICTURE" => "Y",
-		"DISPLAY_PREVIEW_TEXT" => "Y",
-		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array("",""),
-		"FILTER_NAME" => "",
-		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "24",
-		"IBLOCK_TYPE" => "products",
-		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
-		"INCLUDE_SUBSECTIONS" => "Y",
-		"MESSAGE_404" => "",
-		"NEWS_COUNT" => "20",
-		"PAGER_BASE_LINK_ENABLE" => "N",
-		"PAGER_DESC_NUMBERING" => "N",
-		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-		"PAGER_SHOW_ALL" => "N",
-		"PAGER_SHOW_ALWAYS" => "N",
-		"PAGER_TEMPLATE" => ".default",
-		"PAGER_TITLE" => "Новости",
-		"PARENT_SECTION" => "",
-		"PARENT_SECTION_CODE" => "",
-		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array("","img1","img2","img3","img4","img5","img6","img7","img8","img9","img10",""),
-		"SET_BROWSER_TITLE" => "N",
-		"SET_LAST_MODIFIED" => "N",
-		"SET_META_DESCRIPTION" => "N",
-		"SET_META_KEYWORDS" => "N",
-		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "N",
-		"SHOW_404" => "N",
-		"SORT_BY1" => "ACTIVE_FROM",
-		"SORT_BY2" => "SORT",
-		"SORT_ORDER1" => "DESC",
-		"SORT_ORDER2" => "ASC",
-		"STRICT_SECTION_CHECK" => "N"
-	)
-);?><br>
- <br>
- <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section.list",
-	"",
-	Array(
-		"ADD_SECTIONS_CHAIN" => "Y",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
-		"CACHE_TIME" => "36000000",
-		"CACHE_TYPE" => "A",
-		"COUNT_ELEMENTS" => "Y",
-		"COUNT_ELEMENTS_FILTER" => "CNT_ACTIVE",
-		"FILTER_NAME" => "sectionsFilter",
-		"IBLOCK_ID" => "24",
-		"IBLOCK_TYPE" => "products",
-		"SECTION_CODE" => "",
-		"SECTION_FIELDS" => array("",""),
-		"SECTION_ID" => $_REQUEST["SECTION_ID"],
-		"SECTION_URL" => "",
-		"SECTION_USER_FIELDS" => array("",""),
-		"SHOW_PARENT_NAME" => "Y",
-		"TOP_DEPTH" => "2",
-		"VIEW_MODE" => "LINE"
-	)
-);?><br><?  require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<table>
+    <thead>
+    <tr>
+        <th>
+            <a name="choose"></a>
+        </th>
+        <th>
+            <p>
+                Минимальный
+            </p>
+            <h5>от 3 490 ₷</h5>
+        </th>
+        <th>
+            <p>
+                Базовый
+            </p>
+            <h5>от 13 490 ₷</h5>
+        </th>
+        <th>
+            <p>
+                Расширенный
+            </p>
+            <h5>от 24 990 ₷</h5>
+        </th>
+        <th>
+            <p>
+                Корпоративный
+            </p>
+            <h5>от 39 490 ₷</h5>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <a href="/function/80">Приход на склад</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check-blue.png" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png" title="check-blue.png"><br>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/function/80">Подбор заказа</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check-gray.png" src="/upload/medialibrary/dd4/9j1o12wjn15l6cvs6uamdziga1ww1mw6/check-gray.png" title="check-gray.png"><br>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Инвентаризация на складе
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/function/80">Приход на склад</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/function/80">Подбор заказа</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/dd4/9j1o12wjn15l6cvs6uamdziga1ww1mw6/check-gray.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Инвентаризация на складе
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/function/80">Приход на склад</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/function/80">Подбор заказа</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/dd4/9j1o12wjn15l6cvs6uamdziga1ww1mw6/check-gray.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Инвентаризация на складе
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/function/80">Приход на склад</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/function/80">Подбор заказа</a>
+        </td>
+        <td>
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/dd4/9j1o12wjn15l6cvs6uamdziga1ww1mw6/check-gray.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Инвентаризация на складе
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+        <td>
+            <img alt="check" src="/upload/medialibrary/ec0/dqkiyrrogkuz31m6id4qe8szbdv578yr/check-blue.png">
+        </td>
+    </tr>
+    </tbody>
+</table>

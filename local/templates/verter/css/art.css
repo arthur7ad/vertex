@@ -91,5 +91,8 @@ div.mf-ok-text {
 .mt-3-minus { margin-top: -3rem;     padding-bottom: 1rem;}
 
 .funct-mar{ padding: 2em 2em 0 2em;}
-.funct-mar table{ margin: -2em -2em 0 -2em;}
+.funct-mar table{   width: calc(100% + 4em)!important;  margin: -2em -2em 0 -2em;}
 .fix { position:sticky; top:0;}
+.all-functions .info table tr td img {
+    width: 1.2em;
+}
