@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001670577176';
-$dateexpire = '001706577176';
+$datecreate = '001672019174';
+$dateexpire = '001708019174';
 $ser_content = 'a:2:{s:7:"CONTENT";s:741:"
     <div class="swiper-slide">
                 <img src="/upload/iblock/b64/2dbz6wx5giss5xg7ozwpzbtju5nv82l4/rostech.svg" alt="logo">

@@ -1,4 +1,4 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 /** @var array $arParams */
 /** @var array $arResult */
 /** @global CMain $APPLICATION */
@@ -13,51 +13,30 @@
 $this->setFrameMode(true);
 ?>
 
-<?foreach($arResult["ITEMS"] as $k => $arItem):?>
-    <?if($k == 0){?>
-        <div>
-            <figure class="gradient">
-                <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>">
-                <figcaption><?=$arItem['NAME']?></figcaption>
-            </figure>
-            <p><?=$arItem['PREVIEW_TEXT']?></p>
-            <a href="<?=$arItem['DETAIL_PAGE_URL']?>" class="more">подробнее</a>
-        </div>
-    <?}elseif($k == 1){?>
-        <div>
-            <figure>
-                <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>">
-                <figcaption><?=$arItem['NAME']?></figcaption>
-            </figure>
-            <p><?=$arItem['PREVIEW_TEXT']?></p>
-            <a href="<?=$arItem['DETAIL_PAGE_URL']?>" class="more">подробнее</a>
-        </div>
-    <?}elseif($k == 2){?>
-        <div>
-            <figure>
-                <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>">
-                <figcaption><?=$arItem['NAME']?></figcaption>
-            </figure>
-            <p><?=$arItem['PREVIEW_TEXT']?></p>
-            <a href="<?=$arItem['DETAIL_PAGE_URL']?>" class="more">подробнее</a>
-        </div>
-    <?}elseif($k == 3){?>
-        <div>
-            <figure class="gradient">
-                <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>">
-                <figcaption><?=$arItem['NAME']?></figcaption>
-            </figure>
-            <p><?=$arItem['PREVIEW_TEXT']?></p>
-            <a href="<?=$arItem['DETAIL_PAGE_URL']?>" class="more">подробнее</a>
-        </div>
-    <?}elseif($k == 4){?>
-        <div>
+<? foreach ($arResult["ITEMS"] as $k => $arItem): ?>
+
+    <div>
+        <?
+
+        if ($arItem['PROPERTIES']['effect']['VALUE_XML_ID'] == 2) { ?>
+        <figure class="gradient">
+            <? } elseif ($arItem['PROPERTIES']['effect']['VALUE_XML_ID'] == 3){
+            ?>
             <figure class="bg-img">
-                <img src="<?=$arItem['PREVIEW_PICTURE']['SRC']?>" alt="<?=$arItem['NAME']?>">
-                <figcaption><?=$arItem['NAME']?></figcaption>
-            </figure>
-            <p><?=$arItem['PREVIEW_TEXT']?></p>
-            <a href="<?=$arItem['DETAIL_PAGE_URL']?>" class="more">подробнее</a>
-        </div>
-    <?}?>
-<?endforeach;?>
+                <? } else { ?>
+                <figure>
+                    <? } ?>
+
+                    <img src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" alt="<?= $arItem['NAME'] ?>">
+                    <figcaption><?= $arItem['NAME'] ?></figcaption>
+                </figure>
+                <p><?= $arItem['PREVIEW_TEXT'] ?></p>
+                <?  if ($arItem['PROPERTIES']['link']['VALUE']) { ?>
+                    <a href="/article/<?=$arItem['PROPERTIES']['link']['VALUE']?>" class="more">подробнее</a>
+                <? } else {?>
+                    <a href="#" class="more">подробнее</a>
+                <? } ?>
+    </div>
+
+
+<? endforeach; ?>

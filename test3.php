@@ -4,6 +4,7 @@ $APPLICATION->SetTitle("");
 ?>
     <br><br><br><br><br><br><br>
 <?php
+CModule::IncludeModule("iblock");
 $IBLOCK_ID = 24;
 $arFilter = array(
     'IBLOCK_ID' => $IBLOCK_ID,

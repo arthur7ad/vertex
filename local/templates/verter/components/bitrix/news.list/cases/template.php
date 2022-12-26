@@ -27,7 +27,7 @@ if($count==0) {
         ?>
 
 
-        <li class="big" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+        <li class="big div-cases" id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
 
             <div class="case-grid">
                 <? if ($arItem['PREVIEW_PICTURE']['SRC']){ ?>
@@ -57,17 +57,10 @@ if($count==0) {
                             </div>
                         <? } ?>
                     </div>
-                    <?
-                    $res = CIBlockElement::GetProperty($arItem['IBLOCK_ID'], $arItem['ID'], "sort", "asc", array("CODE" => "logo_company"));
-                    if ($ob = $res->GetNext()) {
-                        $logo_company = $ob['VALUE'];
-                        $file = CFile::GetFileArray($logo_company);
-                        $logo_company = $file['SRC'];
-                    }
-                    ?>
-                    <? if ($logo_company) { ?>
+
+                    <? if (CFile::GetPath($arItem['PROPERTIES']['logo_company']['VALUE'])) { ?>
                         <div class="logo">
-                            <img src="<?= $logo_company ?>" alt="<?= $arItem['NAME'] ?>">
+                            <img src="<?= CFile::GetPath($arItem['PROPERTIES']['logo_company']['VALUE']) ?>" alt="<?= $arItem['NAME'] ?>">
                         </div>
                     <? } ?>
                     <a href="/case/<?= $arItem['PROPERTIES']['link']['VALUE'] ?>" class="more"><span>подробнее</span></a>
@@ -77,24 +70,17 @@ if($count==0) {
 
 
     <? } else { ?>
-        <li class="mini">
+        <li class="mini div-cases">
             <div class="case">
                 <div class="text">
                     <h5><?= $arItem['NAME'] ?></h5>
                     <p><?= $arItem['PREVIEW_TEXT'] ?></p>
                 </div>
                 <div class="info">
-                    <?
-                    $res = CIBlockElement::GetProperty($arItem['IBLOCK_ID'], $arItem['ID'], "sort", "asc", array("CODE" => "logo_company"));
-                    if ($ob = $res->GetNext()) {
-                        $logo_company = $ob['VALUE'];
-                        $file = CFile::GetFileArray($logo_company);
-                        $logo_company = $file['SRC'];
-                    }
-                    ?>
-                    <? if ($logo_company) { ?>
+
+                    <? if (CFile::GetPath($arItem['PROPERTIES']['logo_company']['VALUE'])) { ?>
                         <div>
-                            <img src="<?= $logo_company ?>" alt="<?= $arItem['NAME'] ?>">
+                            <img src="<?= CFile::GetPath($arItem['PROPERTIES']['logo_company']['VALUE']) ?>" alt="<?= $arItem['NAME'] ?>">
                         </div>
                     <? } ?>
                     <div>
@@ -106,3 +92,6 @@ if($count==0) {
 
     <?php } ?>
 <? endforeach; ?>
+<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
+    <?=$arResult["NAV_STRING"]?>
+<?endif;?>

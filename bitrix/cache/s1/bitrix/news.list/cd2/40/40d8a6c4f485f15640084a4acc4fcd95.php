@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001670577176';
-$dateexpire = '001706577176';
+$datecreate = '001672019175';
+$dateexpire = '001708019175';
 $ser_content = 'a:2:{s:7:"CONTENT";s:1267:"
             <div class="col-sm-8 col-lg-6">
             <iframe width="100%" height="320" src="https://www.youtube.com/embed/W9nZ6u15yis" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

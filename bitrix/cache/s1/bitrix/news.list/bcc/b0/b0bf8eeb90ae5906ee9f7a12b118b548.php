@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001671812428';
-$dateexpire = '001707812428';
+$datecreate = '001671991453';
+$dateexpire = '001707991453';
 $ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{s:8:"arResult";a:1:{s:10:"CACHED_TPL";s:12663:"
 
     
@@ -322,6 +322,6 @@ $ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:2:{s:8:"arResult";a:1:{s:
         });
 
     </script>
-";}s:18:"templateCachedData";a:5:{s:9:"frameMode";b:1;s:16:"component_epilog";a:5:{s:10:"epilogFile";s:82:"/local/templates/verter/components/bitrix/news.list/functions/component_epilog.php";s:12:"templateName";s:9:"functions";s:12:"templateFile";s:74:"/local/templates/verter/components/bitrix/news.list/functions/template.php";s:14:"templateFolder";s:61:"/local/templates/verter/components/bitrix/news.list/functions";s:12:"templateData";b:0;}s:8:"__NavNum";i:1;s:17:"__currentCounters";a:1:{s:28:"bitrix:system.pagenavigation";i:1;}s:13:"__editButtons";a:2:{i:0;a:5:{i:0;s:13:"AddEditAction";i:1;s:2:"83";i:2;s:185:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=24&type=products&ID=83&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2Ffunctions%2F%3Fclear_cache%3DY";i:3;s:31:"Изменить элемент";i:4;a:0:{}}i:1;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:2:"83";i:2;s:136:"/bitrix/admin/iblock_list_admin.php?IBLOCK_ID=24&type=products&lang=ru&action=delete&ID=E83&return_url=%2Ffunctions%2F%3Fclear_cache%3DY";i:3;s:29:"Удалить элемент";i:4;a:1:{s:7:"CONFIRM";N;}}}}}}';
+";}s:18:"templateCachedData";a:5:{s:9:"frameMode";b:1;s:16:"component_epilog";a:5:{s:10:"epilogFile";s:82:"/local/templates/verter/components/bitrix/news.list/functions/component_epilog.php";s:12:"templateName";s:9:"functions";s:12:"templateFile";s:74:"/local/templates/verter/components/bitrix/news.list/functions/template.php";s:14:"templateFolder";s:61:"/local/templates/verter/components/bitrix/news.list/functions";s:12:"templateData";b:0;}s:8:"__NavNum";i:1;s:17:"__currentCounters";a:1:{s:28:"bitrix:system.pagenavigation";i:1;}s:13:"__editButtons";a:2:{i:0;a:5:{i:0;s:13:"AddEditAction";i:1;s:2:"83";i:2;s:212:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=24&type=products&ID=83&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2Ffunctions%2F%3Fbitrix_include_areas%3DN%26clear_cache%3DY";i:3;s:31:"Изменить элемент";i:4;a:0:{}}i:1;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:2:"83";i:2;s:163:"/bitrix/admin/iblock_list_admin.php?IBLOCK_ID=24&type=products&lang=ru&action=delete&ID=E83&return_url=%2Ffunctions%2F%3Fbitrix_include_areas%3DN%26clear_cache%3DY";i:3;s:29:"Удалить элемент";i:4;a:1:{s:7:"CONFIRM";N;}}}}}}';
 return true;
 ?>

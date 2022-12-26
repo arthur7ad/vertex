@@ -254,6 +254,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/sliders.js"></script>
     <script src="<?=SITE_TEMPLATE_PATH?>/js/main.js"></script>
+    <script src="<?=SITE_TEMPLATE_PATH?>/js/more.js"></script>
 </body>
 
 </html>

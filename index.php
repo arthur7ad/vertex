@@ -643,7 +643,7 @@ $APPLICATION->SetTitle("Главная страница");
                     "INCLUDE_IBLOCK_INTO_CHAIN" => "Y",	// Включать инфоблок в цепочку навигации
                     "INCLUDE_SUBSECTIONS" => "Y",	// Показывать элементы подразделов раздела
                     "MESSAGE_404" => "",	// Сообщение для показа (по умолчанию из компонента)
-                    "NEWS_COUNT" => "100",	// Количество новостей на странице
+                    "NEWS_COUNT" => "5",	// Количество новостей на странице
                     "PAGER_BASE_LINK_ENABLE" => "N",	// Включить обработку ссылок
                     "PAGER_DESC_NUMBERING" => "N",	// Использовать обратную навигацию
                     "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",	// Время кеширования страниц для обратной навигации
@@ -654,9 +654,7 @@ $APPLICATION->SetTitle("Главная страница");
                     "PARENT_SECTION" => "",	// ID раздела
                     "PARENT_SECTION_CODE" => "",	// Код раздела
                     "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
-                    "PROPERTY_CODE" => array(	// Свойства
-                        0 => "PR1",
-                        1 => "",
+                    "PROPERTY_CODE" => array("PR1","link",
                     ),
                     "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
                     "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
@@ -674,7 +672,7 @@ $APPLICATION->SetTitle("Главная страница");
                     false
                 );?>
                 <div class="d-flex align-items-end">
-                    <button type="button" class="btn-2 ms-md-auto">Смотреть все</button>
+                    <a type="button" href="/base/articles" class="btn-2 ms-md-auto">Смотреть все</a>
                 </div>
             </div>
         </div>
@@ -832,7 +830,7 @@ $APPLICATION->SetTitle("Главная страница");
                     </ul>
                 </div>
                 <div class="col-lg-3 d-flex align-items-end">
-                    <button type="button" class="btn-2 ms-lg-auto mt-4">Смотреть все</button>
+                    <a type="button" href="/base/news" class="btn-2 ms-sm-auto">Смотреть все</a>
                 </div>
             </div>
         </div>

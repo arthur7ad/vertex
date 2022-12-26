@@ -55,8 +55,8 @@ function updatecases() {
     });
 }
 
-$('.all-check-cases').click(function (){
-      $(".filtr2-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', true);
+$('.all-check-cases').click(function () {
+    $(".filtr2-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', true);
     $(".filtr2-wrap").find(".alc").find("input[type=checkbox]").prop('checked', true);
 
     updatecases();
@@ -66,15 +66,112 @@ $('.all-check-cases').click(function (){
 $(".filtr-cases").change(function () {
     updatecases();
 });
-$('.allcases').click(function (){
-    if($(".allcases-in").is(":checked")) {
+$('.allcases').click(function () {
+    if ($(".allcases-in").is(":checked")) {
 
         $(".filtr2-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', false);
-    } else
-    {
+    } else {
 
         $(".filtr2-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', true);
     }
 
     updatecases();
+});
+
+
+
+
+function updatearticle() {
+    var arr3 = $('.filtr3-wrap input:checkbox:checked').map(function (i, el) {
+        return $(el).val();
+    }).get();
+    var myJsonString3 = JSON.stringify(arr3);
+    $.ajax({
+        type: "POST",
+        url: '/local/ajax/ajax_article.php',
+        data: {groupFilterArr: myJsonString3, ajax: 1},
+        beforeSend: function () {
+            // Вывод текста в процессе отправки
+            $('#article-list').html(' <img src="/pre.gif" class="center-pre">');
+        },
+        success: function (data) {
+            // Вывод текста результата отправки
+            $('#article-list').html('' + data + '');
+        },
+        error: function (jqXHR, text, error) {
+            // Вывод текста ошибки отправки
+            $('#article-list').html(error);
+        }
+    });
+}
+
+$('.all-check-article').click(function () {
+    $(".filtr3-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', true);
+    $(".filtr3-wrap").find(".alc").find("input[type=checkbox]").prop('checked', true);
+
+    updatearticle();
+});
+
+
+$(".filtr-article").change(function () {
+    updatearticle();
+});
+$('.allarticle').click(function () {
+    if ($(".allarticle-in").is(":checked")) {
+
+        $(".filtr3-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', false);
+    } else {
+
+        $(".filtr3-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', true);
+    }
+
+    updatearticle();
+});
+
+
+function updatewebinar() {
+    var arr3 = $('.filtr4-wrap input:checkbox:checked').map(function (i, el) {
+        return $(el).val();
+    }).get();
+    var myJsonString3 = JSON.stringify(arr3);
+    $.ajax({
+        type: "POST",
+        url: '/local/ajax/ajax_webinar.php',
+        data: {groupFilterArr: myJsonString3, ajax: 1},
+        beforeSend: function () {
+            // Вывод текста в процессе отправки
+            $('#webinar-list').html(' <img src="/pre.gif" class="center-pre">');
+        },
+        success: function (data) {
+            // Вывод текста результата отправки
+            $('#webinar-list').html('' + data + '');
+        },
+        error: function (jqXHR, text, error) {
+            // Вывод текста ошибки отправки
+            $('#webinar-list').html(error);
+        }
+    });
+}
+
+$('.all-check-webinar').click(function () {
+    $(".filtr4-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', true);
+    $(".filtr4-wrap").find(".alc").find("input[type=checkbox]").prop('checked', true);
+
+    updatewebinar();
+});
+
+
+$(".filtr-webinar").change(function () {
+    updatewebinar();
+});
+$('.allwebinar').click(function () {
+    if ($(".allwebinar-in").is(":checked")) {
+
+        $(".filtr4-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', false);
+    } else {
+
+        $(".filtr4-wrap").find(".btn-padding").find("input[type=checkbox]").prop('checked', true);
+    }
+
+    updatewebinar();
 });

@@ -325,7 +325,7 @@ $APPLICATION->SetTitle("Продажи");
                 <h3>Адресный склад</h3>
             </section>
             <section class="container mb-8">
-                <div class="grid-0" id="news">
+                <div class="grid-0 loadmore_wrap4 loadmore_wrap_style" id="news">
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:news.list",
                         "scope",
@@ -358,13 +358,13 @@ $APPLICATION->SetTitle("Продажи");
                             "INCLUDE_SUBSECTIONS" => "N",
                             "INSTANT_RELOAD" => "Y",
                             "MESSAGE_404" => "",
-                            "NEWS_COUNT" => "20",
+                            "NEWS_COUNT" => "16",
                             "PAGER_BASE_LINK_ENABLE" => "N",
                             "PAGER_DESC_NUMBERING" => "N",
                             "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
                             "PAGER_SHOW_ALL" => "N",
                             "PAGER_SHOW_ALWAYS" => "N",
-                            "PAGER_TEMPLATE" => ".default",
+                            "PAGER_TEMPLATE" => "scope_more",
                             "PAGER_TITLE" => "Новости",
                             "PARENT_SECTION" => "",
                             "PARENT_SECTION_CODE" => "",
@@ -1022,7 +1022,7 @@ $APPLICATION->SetTitle("Продажи");
                 </div>
             </section>
             <section class="container mb-sm-5" id="start-2">
-                <ul class="grid-cols-2 mb-5" id="cases-list">
+                <ul class="grid-cols-2 mb-5 loadmore_wrap5 loadmore_wrap_style" id="cases-list">
                     <? $APPLICATION->IncludeComponent(
                         "bitrix:news.list",
                         "cases",
@@ -1060,7 +1060,7 @@ $APPLICATION->SetTitle("Продажи");
                             "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
                             "PAGER_SHOW_ALL" => "N",
                             "PAGER_SHOW_ALWAYS" => "N",
-                            "PAGER_TEMPLATE" => ".default",
+                            "PAGER_TEMPLATE" => "cases_more",
                             "PAGER_TITLE" => "Новости",
                             "PARENT_SECTION" => "",
                             "PARENT_SECTION_CODE" => "",

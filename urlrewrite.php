@@ -24,6 +24,22 @@ $arUrlRewrite=array (
     'PATH' => '/function/index.php',
     'SORT' => 100,
   ),
+  5 => 
+  array (
+    'CONDITION' => '#^/article/#',
+    'RULE' => 'eid=$1',
+    'ID' => '',
+    'PATH' => '/article/index.php',
+    'SORT' => 100,
+  ),
+  6 => 
+  array (
+    'CONDITION' => '#^/webinar/#',
+    'RULE' => 'eid=$1',
+    'ID' => '',
+    'PATH' => '/webinar/index.php',
+    'SORT' => 100,
+  ),
   1 => 
   array (
     'CONDITION' => '#^/rest/#',
@@ -38,6 +54,22 @@ $arUrlRewrite=array (
     'RULE' => 'eid=$1',
     'ID' => '',
     'PATH' => '/case/index.php',
+    'SORT' => 100,
+  ),
+  8 => 
+  array (
+    'CONDITION' => '#^/base/#',
+    'RULE' => 'act=$1',
+    'ID' => '',
+    'PATH' => '/base/index.php',
+    'SORT' => 100,
+  ),
+  7 => 
+  array (
+    'CONDITION' => '#^/new/#',
+    'RULE' => 'eid=$1',
+    'ID' => '',
+    'PATH' => '/new/index.php',
     'SORT' => 100,
   ),
 );
