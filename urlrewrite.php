@@ -72,4 +72,12 @@ $arUrlRewrite=array (
     'PATH' => '/new/index.php',
     'SORT' => 100,
   ),
+    9 =>
+        array (
+            'CONDITION' => '#^/documentation/#',
+            'RULE' => 'act=$1',
+            'ID' => '',
+            'PATH' => '/documentation/index.php',
+            'SORT' => 100,
+        ),
 );

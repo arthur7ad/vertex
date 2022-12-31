@@ -6,6 +6,8 @@ const swiper = new Swiper('.swiper-1', {
     },
     pagination: {
       el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
     },
     navigation: {
       nextEl: '.swiper-button-next',
@@ -20,6 +22,9 @@ const swiper2= new Swiper('.swiper-brands', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 3000,
   },
   breakpoints: {
     768: {

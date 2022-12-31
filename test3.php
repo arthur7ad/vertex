@@ -5,7 +5,7 @@ $APPLICATION->SetTitle("");
     <br><br><br><br><br><br><br>
 <?php
 CModule::IncludeModule("iblock");
-$IBLOCK_ID = 24;
+$IBLOCK_ID = 29;
 $arFilter = array(
     'IBLOCK_ID' => $IBLOCK_ID,
     'GLOBAL_ACTIVE' => 'Y');
@@ -14,25 +14,23 @@ $arSelect = array(
 );
 $obSection = CIBlockSection::GetTreeList($arFilter);
 $arItem = array();
+$cats = array();
 while ($arResult = $obSection->GetNext()) {
-    $arItem[] = array("ID" => $arResult['ID'], "NAME" => $arResult['NAME'], "LVL" => $arResult['DEPTH_LEVEL']);
-
+    $arItem[] = array("ID" => $arResult['ID'], "NAME" => $arResult['NAME'], "LVL" => $arResult['DEPTH_LEVEL'], "parent" => $arResult['IBLOCK_SECTION_ID']);
 }
 ?>
     <ul>
         <?
-        $arSelect = array();
-        $x = 0;
-        $arr = array();
         foreach ($arItem as $key => $element) {
 
             for ($i = 0; $i <= ($element['LVL'] - 2); $i++)
-                echo '<ul>';
+                echo '<li><ul>';
             echo '<li>';
-            echo $element['LVL'] . $element['NAME'] . '<br>';
 
+            echo 'Par:'.$element['parent'] . ' ID:'.$element['ID'] . ' | Название:'. $element['NAME'] . '';
             $arFilter = array("IBLOCK_ID" => IntVal($IBLOCK_ID), "ACTIVE_DATE" => "Y", "ACTIVE" => "Y", "SECTION_ID" => $element["ID"]);
             $res = CIBlockElement::GetList(array(), $arFilter, false, array(), $arSelect);
+
             while ($ob = $res->GetNextElement()) {
                 $arFields = $ob->GetFields();
                 ?>
@@ -43,10 +41,11 @@ while ($arResult = $obSection->GetNext()) {
             }
             echo '</li>';
             for ($i = 0; $i <= ($element['LVL'] - 2); $i++)
-                echo '</ul>';
+                echo '</ul></li>';
         }
 
         ?>
     </ul>
+
     <br><br><br><br><br>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
