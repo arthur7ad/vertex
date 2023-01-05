@@ -31,6 +31,8 @@ $this->setFrameMode(true);
     <section class="sec-func-page mb-8">
         <? if ($arItem['PREVIEW_PICTURE']['SRC']) { ?>
             <img alt="<?= $arItem['NAME'] ?>" src="<?= $arItem['PREVIEW_PICTURE']['SRC'] ?>" class="bg">
+        <? } else { ?>
+            <img alt="" src="/local/templates/verter/imgs/bg/bg-6.jpg" class="bg">
         <? } ?>
         <div class="container">
             <div class="row justify-content-center">

@@ -146,19 +146,143 @@ div.mf-ok-text {
     color: #fff;
     border-radius: 2em;
 }
+
 .text-center-art {
     position: absolute;
     width: 100%;
     text-align: center;
 }
+
 header {
     z-index: 1010;
 }
-.loadmore_wrap_style { position:relative; padding-bottom: 30px;}
-.div-load_more{ position: absolute;
+
+.loadmore_wrap_style {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.div-load_more {
+    position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    text-align: center;}
-.load_more { margin:0 auto}
-.loadmore_wrap2,.loadmore_wrap3,.loadmore_wrap4,.loadmore_wrap5{ padding-bottom: 90px;}
+    text-align: center;
+}
+
+.load_more {
+    margin: 0 auto
+}
+
+.loadmore_wrap2, .loadmore_wrap3, .loadmore_wrap4, .loadmore_wrap5 {
+    padding-bottom: 90px;
+}
+
+.group {
+    color: #0160fe;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.sec-docs nav ol ol .group {
+    font-weight: 400;
+}
+
+.doc-mar {
+    display: contents;
+}
+
+.doc-mar table {
+    width: 100%;
+}
+
+.doc-mar table tr:nth-child(odd) {
+    background-color: #f5f6f8;
+}
+
+.doc-mar table thead tr {
+    background-color: #fff !important;
+}
+
+.doc-mar table thead tr th:first-child {
+    width: 24%;
+    text-align: left;
+}
+
+.doc-mar table thead tr th {
+    width: 19%;
+    padding: 0;
+    text-align: center;
+}
+
+.doc-mar table tr:nth-child(odd) {
+    background-color: #f5f6f8;
+}
+
+.doc-mar table tr td {
+    width: 19%;
+    padding: 0.75em 1em;
+    text-align: center;
+}
+
+.doc-mar table tr td:first-child {
+    width: 24%;
+    text-align: left;
+    padding-left: 2em;
+}
+
+.doc-mar img,.doc-mar table tr td img {
+    width: 15px;
+}
+
+header nav ul li.hover-menu:hover .sub-menu li {
+    display: block;
+}
+
+header nav ul li.hover-menu:hover .sub-menu {
+    display: block;
+    min-width: 184px;
+    margin: 0;
+    padding: 2.5em 0 10px 0;
+}
+
+header nav ul li.hover-menu:hover .sub-menu li {
+    display: block !important;
+    margin: 0;
+    width: 100%;
+    padding: 0.3em 1.2em;
+}
+
+header nav ul li.hover-menu a {
+    border: none !important;
+    padding: 0;
+    margin: 0;
+}
+.doc-search-item {     display: block;
+    font-size: 18px;
+    margin: -4px 0;}
+
+.sec-docs-area-search {
+    background-color: #fff;
+    width: 73%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+.no-padding {margin: 0 -11px;}
+.sec-docs-area {
+    padding-top: 6em;
+    padding-bottom: 6em;
+    overflow: hidden;
+}
+
+.sec-docs-area .sec-updates-2 .simple-table table tr td {
+    padding: 0.75em 1em;
+}
+.width-100 { width:100%; text-align: center;}
+header nav ul li.active {
+    border: 2px solid #e2e8f0;
+}
+.inner header nav ul li.active {
+     border: 2px solid #fff;
+}
+header nav ul .hover-menu a:hover {color: #fff;}

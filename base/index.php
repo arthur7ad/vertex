@@ -84,6 +84,7 @@ if(empty($act)){
             </section>
 
             <section class="sec-main-base mb-8">
+                <img src="/local/templates/verter/imgs/bg/baza.png" alt="База знаний" class="title element-animation">
                 <!-- <div class="title">База знаний</div> -->
                 <div class="container">
                     <div class="main-base-grid loadmore_wrap loadmore_wrap_style" id="article-list">
@@ -197,6 +198,7 @@ if(empty($act)){
             </section>
 
             <section class="sec-main-base mb-8">
+                <img src="/local/templates/verter/imgs/bg/baza.png" alt="База знаний" class="title element-animation">
                 <div class="title">База знаний</div>
                 <div class="container">
                     <div class="webinars-grid loadmore_wrap2 loadmore_wrap_style" id="webinar-list">

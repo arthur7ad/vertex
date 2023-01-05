@@ -1,10 +1,34 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
-echo preg_replace_callback(
-    "/#SlIDER_ID_([\d]+)#/is".BX_UTF_PCRE_MODIFIER,
+$content = $arResult["CACHED_TPL"];
+
+$content = preg_replace_callback(
+    "/<table/is".BX_UTF_PCRE_MODIFIER,
     function ($matches) {
         ob_start();
+        echo '</div></div><section class="sec-updates-2"><div class="simple-table"><table';
+        $returnStr = @ob_get_contents();
+        ob_get_clean();
+        return $returnStr;
+    },
+    $content);
 
+$content = preg_replace_callback(
+    "/<\/table>/is".BX_UTF_PCRE_MODIFIER,
+    function ($matches2) {
+        ob_start();
+
+        echo '</table></div></section><div class="container"><div class="no-padding">';
+        $returnStr = @ob_get_contents();
+        ob_get_clean();
+        return $returnStr;
+    },
+    $content);
+
+$content = preg_replace_callback(
+    "/#SLIDER_ID_([\d]+)#/is".BX_UTF_PCRE_MODIFIER,
+    function ($matches) {
+        ob_start();
         global $slidid;
         $slidid = Array("ID" => $matches[1]);
 
@@ -12,7 +36,7 @@ echo preg_replace_callback(
 
         $GLOBALS["APPLICATION"]->IncludeComponent(
             "bitrix:news.list",
-            "slider-function",
+            "slider",
             Array(
                 "ACTIVE_DATE_FORMAT" => "d.m.Y",
                 "ADD_SECTIONS_CHAIN" => "Y",
@@ -68,9 +92,14 @@ echo preg_replace_callback(
             )
         );
 
-        $retrunStr = @ob_get_contents();
+        $returnStr = @ob_get_contents();
         ob_get_clean();
-        return $retrunStr;
+        return $returnStr;
     },
-    $arResult["CACHED_TPL"]);
-?>
+    $content);
+
+echo $content;
+
+
+
+

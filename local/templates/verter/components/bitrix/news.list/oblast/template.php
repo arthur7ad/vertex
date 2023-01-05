@@ -21,7 +21,7 @@ $this->setFrameMode(true);
         <p class=" text-[13px] md:text-[16px] mt-4 text-center font-medium"><?echo $arItem["NAME"]?></p>
     </div> -->
     <li>
-        <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="<?echo $arItem["NAME"]?>" class="icon">
+        <img src="<?=$arItem["PREVIEW_PICTURE"]["SRC"]?>" alt="<?echo $arItem["NAME"]?>" class="icon element-animation">
         <p class="text-center lh-12 mt-3"><?echo $arItem["NAME"]?></p>
     </li>
 <?endforeach;?>

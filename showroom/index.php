@@ -134,7 +134,7 @@ $APPLICATION->SetTitle("Продажи");
                     "PARENT_SECTION" => "2",
                     "PARENT_SECTION_CODE" => "",
                     "PREVIEW_TRUNCATE_LEN" => "",
-                    "PROPERTY_CODE" => array(0 => "", 1 => "",),
+                    "PROPERTY_CODE" => array(0 => "link", 1 => "",),
                     "SET_BROWSER_TITLE" => "Y",
                     "SET_LAST_MODIFIED" => "N",
                     "SET_META_DESCRIPTION" => "Y",
@@ -497,7 +497,7 @@ $APPLICATION->SetTitle("Продажи");
                                     "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
                                     "PROPERTY_CODE" => array(	// Свойства
                                         0 => "PR1",
-                                        1 => "",
+                                        1 => "link",
                                     ),
                                     "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
                                     "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
@@ -1191,4 +1191,6 @@ $APPLICATION->SetTitle("Продажи");
             </div>
         </div>
         <a href="" class="btn-2 mx-auto mt-4 mt-lg-5">все статьи</a></section>
-    <script src="<?= SITE_TEMPLATE_PATH ?>/js/filtr.js"></script><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+
+<script src="<?= SITE_TEMPLATE_PATH ?>/js/filtr.js"></script>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imgs/logo.svg">
+    <link rel="shortcut icon" href="<?=SITE_TEMPLATE_PATH?>/imgs/logo.svg">
     <title><?$APPLICATION->ShowTitle();?></title>
     <?$APPLICATION->ShowHead();?>
     <link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/css/bootstrap.min.css" rel="stylesheet"/>
@@ -19,7 +19,7 @@
 
 <body>
 <?$APPLICATION->ShowPanel();?>
-<? if($APPLICATION->GetCurDir()==='/') { ?>
+<? if($APPLICATION->GetCurDir()==='/' OR $APPLICATION->GetCurDir()==='/support/') { ?>
     <header>
         <div class="container-fluid h-100">
             <div class="d-flex align-items-center justify-content-between h-100">
@@ -30,15 +30,15 @@
                         "bitrix:menu",
                         "top2",
                         array(
-                            "COMPONENT_TEMPLATE" => "menu",
+                            "COMPONENT_TEMPLATE" => "top2",
                             "ROOT_MENU_TYPE" => "top",
                             "MENU_CACHE_TYPE" => "N",
                             "MENU_CACHE_TIME" => "3600",
                             "MENU_CACHE_USE_GROUPS" => "Y",
                             "MENU_CACHE_GET_VARS" => array(
                             ),
-                            "MAX_LEVEL" => "1",
-                            "CHILD_MENU_TYPE" => "top",
+                            "MAX_LEVEL" => "3",
+                            "CHILD_MENU_TYPE" => "podmenu",
                             "USE_EXT" => "N",
                             "DELAY" => "N",
                             "ALLOW_MULTI_SELECT" => "N"
@@ -65,15 +65,15 @@
                             "bitrix:menu",
                             "top2",
                             array(
-                                "COMPONENT_TEMPLATE" => "menu",
+                                "COMPONENT_TEMPLATE" => "top2",
                                 "ROOT_MENU_TYPE" => "top",
                                 "MENU_CACHE_TYPE" => "N",
                                 "MENU_CACHE_TIME" => "3600",
                                 "MENU_CACHE_USE_GROUPS" => "Y",
                                 "MENU_CACHE_GET_VARS" => array(
                                 ),
-                                "MAX_LEVEL" => "1",
-                                "CHILD_MENU_TYPE" => "top",
+                                "MAX_LEVEL" => "3",
+                                "CHILD_MENU_TYPE" => "podmenu",
                                 "USE_EXT" => "N",
                                 "DELAY" => "N",
                                 "ALLOW_MULTI_SELECT" => "N"

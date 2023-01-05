@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001672020147';
-$dateexpire = '001708020147';
+$datecreate = '001672920824';
+$dateexpire = '001708920824';
 $ser_content = 'a:2:{s:7:"CONTENT";s:2820:"
         <div id="bx_3099439860_60">
         <div class="container mb-4 mb-sm-5">
@@ -39,6 +39,6 @@ $ser_content = 'a:2:{s:7:"CONTENT";s:2820:"
     </div>
 
 
-";s:4:"VARS";a:2:{s:8:"arResult";a:7:{s:2:"ID";s:2:"17";s:14:"IBLOCK_TYPE_ID";s:8:"products";s:13:"LIST_PAGE_URL";s:44:"#SITE_DIR#/products/index.php?ID=#IBLOCK_ID#";s:15:"NAV_CACHED_DATA";N;s:4:"NAME";s:61:"Плюсы внедрения адресного склада";s:7:"SECTION";b:0;s:8:"ELEMENTS";a:1:{i:0;i:60;}}s:18:"templateCachedData";a:4:{s:9:"frameMode";b:1;s:8:"__NavNum";i:1;s:17:"__currentCounters";a:1:{s:28:"bitrix:system.pagenavigation";i:1;}s:13:"__editButtons";a:2:{i:0;a:5:{i:0;s:13:"AddEditAction";i:1;s:2:"60";i:2;s:184:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=17&type=products&ID=60&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2Fshowroom%2F%3Fclear_cache%3DY";i:3;s:31:"Изменить элемент";i:4;a:0:{}}i:1;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:2:"60";i:2;s:135:"/bitrix/admin/iblock_list_admin.php?IBLOCK_ID=17&type=products&lang=ru&action=delete&ID=E60&return_url=%2Fshowroom%2F%3Fclear_cache%3DY";i:3;s:29:"Удалить элемент";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}}}}}';
+";s:4:"VARS";a:2:{s:8:"arResult";a:7:{s:2:"ID";s:2:"17";s:14:"IBLOCK_TYPE_ID";s:8:"products";s:13:"LIST_PAGE_URL";s:44:"#SITE_DIR#/products/index.php?ID=#IBLOCK_ID#";s:15:"NAV_CACHED_DATA";N;s:4:"NAME";s:61:"Плюсы внедрения адресного склада";s:7:"SECTION";b:0;s:8:"ELEMENTS";a:1:{i:0;i:60;}}s:18:"templateCachedData";a:4:{s:9:"frameMode";b:1;s:8:"__NavNum";i:1;s:17:"__currentCounters";a:1:{s:28:"bitrix:system.pagenavigation";i:1;}s:13:"__editButtons";a:2:{i:0;a:5:{i:0;s:13:"AddEditAction";i:1;s:2:"60";i:2;s:166:"/bitrix/admin/iblock_element_edit.php?IBLOCK_ID=17&type=products&ID=60&lang=ru&force_catalog=&filter_section=0&bxpublic=Y&from_module=iblock&return_url=%2Fshowroom%2F";i:3;s:31:"Изменить элемент";i:4;a:0:{}}i:1;a:5:{i:0;s:15:"AddDeleteAction";i:1;s:2:"60";i:2;s:117:"/bitrix/admin/iblock_list_admin.php?IBLOCK_ID=17&type=products&lang=ru&action=delete&ID=E60&return_url=%2Fshowroom%2F";i:3;s:29:"Удалить элемент";i:4;a:1:{s:7:"CONFIRM";s:123:"Будет удалена вся информация, связанная с этой записью. Продолжить?";}}}}}}';
 return true;
 ?>

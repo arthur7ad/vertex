@@ -12,7 +12,7 @@ echo preg_replace_callback(
 
         $GLOBALS["APPLICATION"]->IncludeComponent(
             "bitrix:news.list",
-            "slider-function",
+            "slider-all",
             Array(
                 "ACTIVE_DATE_FORMAT" => "d.m.Y",
                 "ADD_SECTIONS_CHAIN" => "Y",

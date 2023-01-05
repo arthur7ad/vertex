@@ -22,7 +22,7 @@ $this->setFrameMode(true);
 
             <div class="text">
                 <h5><?echo $arItem["NAME"]?></h5>
-                <p><?echo $arItem["PREVIEW_TEXT"]?></p>
+                <p><?=$arItem['PROPERTIES']['link']['VALUE']?></p>
             </div>
 
             <div class="info">
@@ -41,7 +41,7 @@ $this->setFrameMode(true);
                 <img src="<?=$file['src']?>" alt="label">
             </div>
 
-            <a href="<?echo $arItem["DETAIL_PAGE_URL"]?>" class="more"><span>подробнее</span></a>
+            <a href="<?=$arItem['PROPERTIES']['link']['VALUE']?>" class="more"><span>подробнее</span></a>
         </div>
     </div>
 <?endforeach;?>

@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001671036991';
-$dateexpire = '001707036991';
+$datecreate = '001672920481';
+$dateexpire = '001708920481';
 $ser_content = 'a:2:{s:7:"CONTENT";s:987:"
         <img src="/upload/iblock/468/ow3ugodkvm97dh91gzavesul2a2tomyp/bg-2.jpg" alt="Продажи" class="bg">
     <div class="container" id="bx_3218110189_68">

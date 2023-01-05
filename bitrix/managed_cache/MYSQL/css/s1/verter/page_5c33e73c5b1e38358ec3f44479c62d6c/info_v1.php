@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/local/components/verter/main.feedback/templates/form-case/style.css" => "1670330366458",]; ?>

@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/bitrix/components/bitrix/catalog.smart.filter/templates/.default/style.css" => "166987084013420","/bitrix/components/bitrix/catalog.smart.filter/templates/.default/themes/blue/colors.css" => "16698708434373","/local/components/verter/main.feedback/templates/.default/style.css" => "1670330366458",]; ?>

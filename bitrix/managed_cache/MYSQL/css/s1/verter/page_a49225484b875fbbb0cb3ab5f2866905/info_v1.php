@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/local/components/verter/catalog.section/templates/scope/style.css" => "1670345477408","/local/components/verter/main.feedback/templates/.default/style.css" => "1670330366458",]; ?>

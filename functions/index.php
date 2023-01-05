@@ -68,6 +68,8 @@ if(intval($id)!=0) {
 
 
 } else {
+    global $osnFilter;
+    $osnFilter = array("PROPERTY_osn_VALUE"=>"Да");
 
     $APPLICATION->IncludeComponent(
         "bitrix:news.list",
@@ -93,7 +95,7 @@ if(intval($id)!=0) {
             "DISPLAY_PREVIEW_TEXT" => "Y",
             "DISPLAY_TOP_PAGER" => "N",
             "FIELD_CODE" => array("", ""),
-            "FILTER_NAME" => "arNewsFilter",
+            "FILTER_NAME" => "osnFilter",
             "HIDE_LINK_WHEN_NO_DETAIL" => "N",
             "IBLOCK_ID" => "24",
             "IBLOCK_TYPE" => "products",

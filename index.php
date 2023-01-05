@@ -10,7 +10,7 @@ $APPLICATION->SetTitle("Главная страница");
             "PATH" => "/include/banner.php"
         )
     );?>
-            <div class="mt-4 mt-lg-5 swiper-main-prods"  id="sproducts" name="sproducts">
+            <div class="mt-4 mt-lg-5 swiper-main-prods" id="products">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="/storage/"><div class="box">
@@ -160,7 +160,7 @@ $APPLICATION->SetTitle("Главная страница");
                     "PARENT_SECTION_CODE" => "",	// Код раздела
                     "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
                     "PROPERTY_CODE" => array(	// Свойства
-                        0 => "",
+                        0 => "link",
                         1 => "",
                     ),
                     "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
@@ -229,7 +229,7 @@ $APPLICATION->SetTitle("Главная страница");
                         "PARENT_SECTION_CODE" => "",	// Код раздела
                         "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
                         "PROPERTY_CODE" => array(	// Свойства
-                            0 => "",
+                            0 => "link",
                             1 => "",
                         ),
                         "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
@@ -298,7 +298,7 @@ $APPLICATION->SetTitle("Главная страница");
                         "PARENT_SECTION_CODE" => "",	// Код раздела
                         "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
                         "PROPERTY_CODE" => array(	// Свойства
-                            0 => "",
+                            0 => "link",
                             1 => "",
                         ),
                         "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
@@ -469,7 +469,7 @@ $APPLICATION->SetTitle("Главная страница");
                             "PREVIEW_TRUNCATE_LEN" => "",	// Максимальная длина анонса для вывода (только для типа текст)
                             "PROPERTY_CODE" => array(	// Свойства
                                 0 => "PR1",
-                                1 => "",
+                                1 => "link",
                             ),
                             "SET_BROWSER_TITLE" => "Y",	// Устанавливать заголовок окна браузера
                             "SET_LAST_MODIFIED" => "N",	// Устанавливать в заголовках ответа время модификации страницы
@@ -497,6 +497,7 @@ $APPLICATION->SetTitle("Главная страница");
     </section>
 
     <section class="sec-brands mb-8">
+        <img src="/local/templates/verter/imgs/bg/dover.png" alt="доверие" class="title element-animation">
         <div class="title">Доверие</div>
         <div class="container">
             <div class="row justify-content-center">
@@ -583,7 +584,7 @@ $APPLICATION->SetTitle("Главная страница");
                     <div class="swiper-button-next"></div>
                 </div>
             </div>
-            
+
             <div class="row justify-content-center">
                 <div class="col-12 col-lg-10">
                     <h3>А также другие бренды и организации по всей России</h3>
@@ -603,6 +604,7 @@ $APPLICATION->SetTitle("Главная страница");
     </section>
 
     <section class="sec-main-base mb-8">
+        <img src="/local/templates/verter/imgs/bg/baza.png" alt="база знаний" class="title element-animation">
         <div class="title">База знаний</div>
         <div class="container">
             <div class="row justify-content-center">
@@ -679,6 +681,7 @@ $APPLICATION->SetTitle("Главная страница");
     </section>
 
     <section class="sec-video mb-8">
+        <img src="/local/templates/verter/imgs/bg/vid.png" alt="Видео" class="title element-animation">
         <div class="title">Видео</div>
         <div class="container">
             <div class="row justify-content-center mb-5">
@@ -766,7 +769,7 @@ $APPLICATION->SetTitle("Главная страница");
             <div class="row">
                 <div class="col-lg-9">
                     <ul class="row row-cols-1 row-cols-sm-2 row-cols-md-3 list-unstyled">
-                        <?$APPLICATION->IncludeComponent("bitrix:news.list", "news", Array(
+                        <?$APPLICATION->IncludeComponent("bitrix:news.list", "news-no-paginavi", Array(
                             "ACTIVE_DATE_FORMAT" => "d.m.Y",	// Формат показа даты
                             "ADD_SECTIONS_CHAIN" => "Y",	// Включать раздел в цепочку навигации
                             "AJAX_MODE" => "N",	// Включить режим AJAX
