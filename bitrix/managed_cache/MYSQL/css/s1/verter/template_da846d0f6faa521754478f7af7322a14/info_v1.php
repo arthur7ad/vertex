@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/verter/css/style.min.css" => "167285821469620","/local/templates/verter/styles.css" => "166989938280713",]; ?>

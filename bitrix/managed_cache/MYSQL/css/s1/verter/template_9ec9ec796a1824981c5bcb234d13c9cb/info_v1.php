@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/verter/css/bootstrap.min.css" => "1672027558194901","/local/templates/verter/css/style.min.css" => "167285821469620","/local/templates/verter/css/art.css" => "16729210805209","/local/templates/verter/fonts/stylesheet.css" => "16720275585763","/local/templates/verter/styles.css" => "166989938280713",]; ?>

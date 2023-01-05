@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Функция";
+$arDirProperties = Array(
+
+);
+?>

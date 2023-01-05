@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/verter/js/jquery.js" => "167039854289664","/local/templates/verter/js/bootstrap.bundle.min.js" => "167202755880496","/local/templates/verter/js/sliders.js" => "16720275581838","/local/templates/verter/js/main.js" => "16720275585168","/local/templates/verter/js/more.js" => "16720181375447",]; ?>

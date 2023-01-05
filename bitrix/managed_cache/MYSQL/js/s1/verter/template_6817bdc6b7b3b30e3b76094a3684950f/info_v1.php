@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/verter/js/jquery.js" => "167039854289664",]; ?>

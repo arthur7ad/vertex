@@ -1,0 +1,23 @@
+
+
+/* Start:/bitrix/components/bitrix/search.page/templates/tags/style.css?1671467425369*/
+div.search-tags-chain a {margin:2px;}
+div.search-tags-chain a.search-tags-link {color:#333333; font-size:90%; text-decoration:none;color:#535353;}
+div.search-tags-cloud a {white-space: normal;}
+a.search-page-params {
+	border-bottom: 1px dashed blue;
+	text-decoration: none;
+}
+div.search-page-params {
+	margin-top: 6px;
+}
+.search-item-rate {font-size: 11px;}
+
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/system.show_message/templates/.default/style.min.css?167146742651*/
+font.errortext{color:red}font.notetext{color:green}
+/* End */
+/* /bitrix/components/bitrix/search.page/templates/tags/style.css?1671467425369 */
+/* /bitrix/components/bitrix/system.show_message/templates/.default/style.min.css?167146742651 */
