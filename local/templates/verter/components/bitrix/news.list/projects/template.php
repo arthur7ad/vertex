@@ -22,7 +22,7 @@ $this->setFrameMode(true);
 
             <div class="text">
                 <h5><?echo $arItem["NAME"]?></h5>
-                <p><?=$arItem['PROPERTIES']['link']['VALUE']?></p>
+                <p><?=$arItem['PREVIEW_TEXT']?></p>
             </div>
 
             <div class="info">
