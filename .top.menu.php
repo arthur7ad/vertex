@@ -2,48 +2,49 @@
 $aMenuLinks = Array(
     Array(
         "Продукты",
-        "#",
+        "/#products",
         Array("/storage/", "/showroom/", "/production/"),
-        Array(
-            "FROM_IBLOCK" => 0,
-            "IS_PARENT" => 1,
-            "DEPTH_LEVEL" => 1
-        ),
+        array(),
+//        Array(
+//            "FROM_IBLOCK" => 0,
+//            "IS_PARENT" => 1,
+//            "DEPTH_LEVEL" => 1
+//        ),
         ""
     ),
-    Array(
-        "Склад",
-        "/storage/",
-        Array(),
-        Array(
-            "FROM_IBLOCK" => 0,
-            "IS_PARENT" => 0,
-            "DEPTH_LEVEL" => 2
-        ),
-        ""
-    ),
-    Array(
-        "Продажи",
-        "/showroom/",
-        Array(),
-        Array(
-            "FROM_IBLOCK" => 0,
-            "IS_PARENT" => 0,
-            "DEPTH_LEVEL" => 2
-        ),
-        ""
-    ),
-    Array(
-        "Продукты",
-        "/production/",
-        Array(),
-        Array(
-            "FROM_IBLOCK" => 0,
-            "IS_PARENT" => 0,
-            "DEPTH_LEVEL" => 2
-        ),
-        ""
-    ),
+//    Array(
+//        "Склад",
+//        "/storage/",
+//        Array(),
+//        Array(
+//            "FROM_IBLOCK" => 0,
+//            "IS_PARENT" => 0,
+//            "DEPTH_LEVEL" => 2
+//        ),
+//        ""
+//    ),
+//    Array(
+//        "Продажи",
+//        "/showroom/",
+//        Array(),
+//        Array(
+//            "FROM_IBLOCK" => 0,
+//            "IS_PARENT" => 0,
+//            "DEPTH_LEVEL" => 2
+//        ),
+//        ""
+//    ),
+//    Array(
+//        "Продукты",
+//        "/production/",
+//        Array(),
+//        Array(
+//            "FROM_IBLOCK" => 0,
+//            "IS_PARENT" => 0,
+//            "DEPTH_LEVEL" => 2
+//        ),
+//        ""
+//    ),
     Array(
         "Техподдержка",
         "/support/",

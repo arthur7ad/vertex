@@ -1,7 +1,7 @@
 <?
 if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001672922184';
-$dateexpire = '001708922184';
+$datecreate = '001673672932';
+$dateexpire = '001709672932';
 $ser_content = 'a:2:{s:7:"CONTENT";s:845:"
     <li class="div-new">
         <div class="news-preview">

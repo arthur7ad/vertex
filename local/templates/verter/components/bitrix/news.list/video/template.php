@@ -16,15 +16,26 @@ $this->setFrameMode(true);
 <?foreach($arResult["ITEMS"] as $k => $arItem):?>
     <?if($k == 0){?>
         <div class="col-sm-8 col-lg-6">
-            <iframe width="100%" height="320" src="https://www.youtube.com/embed/<?=$arItem['NAME']?>" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5><?=$arItem['PREVIEW_TEXT']?></h5>
-            <a href="https://www.youtube.com/embed/<?=$arItem['NAME']?>" target="_blank" class="more">смотреть</a>
+            <?= htmlspecialcharsBack($arItem['PROPERTIES']['video']['VALUE']['TEXT']); ?>
+            <h5><?=$arItem['NAME']?></h5>
+            <?
+            if($arItem['PROPERTIES']['link']['VALUE']['TEXT']){
+            ?>
+            <a href="<?=$arItem['PROPERTIES']['link']['VALUE']?>" target="_blank" class="more">смотреть</a>
+            <?
+            }
+            ?>
         </div>
     <?}elseif($k == 1){?>
         <div class="d-none d-sm-block col-8 col-lg-6 offset-lg-3">
-            <iframe width="100%" height="348" src="https://www.youtube.com/embed/<?=$arItem['NAME']?>" title="Black Screen 10 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h5><?=$arItem['PREVIEW_TEXT']?></h5>
-            <a href="https://www.youtube.com/embed/<?=$arItem['NAME']?>" target="_blank" class="more">смотреть</a>
+            <?= htmlspecialcharsBack($arItem['PROPERTIES']['video']['VALUE']['TEXT']); ?>
+            <h5><?=$arItem['NAME']?></h5>
+            <?
+            if($arItem['PROPERTIES']['link']['VALUE']['TEXT']){
+            ?>
+            <a href="<?=$arItem['PROPERTIES']['link']['VALUE']?>" target="_blank" class="more">смотреть</a>
+            <?
+            }?>
         </div>
     <?}?>
 <?endforeach;?>

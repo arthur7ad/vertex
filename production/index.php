@@ -508,7 +508,7 @@ $APPLICATION->SetTitle("Производсто");
                 "",
                 array(
                     "AJAX_MODE" => "Y",
-                    "EMAIL_TO" => "test@test.ru",
+                    
                     "EVENT_MESSAGE_ID" => array(),
                     "OK_TEXT" => "Ваше сообщение отправлено.",
                     "REQUIRED_FIELDS" => array("NAME", "EMAIL", "PHONE"),
@@ -1076,7 +1076,7 @@ $APPLICATION->SetTitle("Производсто");
                 "",
                 array(
                     "AJAX_MODE" => "Y",
-                    "EMAIL_TO" => "test@test.ru",
+                    
                     "EVENT_MESSAGE_ID" => array(),
                     "OK_TEXT" => "Ваше сообщение отправлено.",
                     "REQUIRED_FIELDS" => array("NAME", "EMAIL", "PHONE"),

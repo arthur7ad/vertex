@@ -153,9 +153,9 @@ div.mf-ok-text {
     text-align: center;
 }
 
-header {
-    z-index: 1010;
-}
+/*header {*/
+/*    z-index: 1010;*/
+/*}*/
 
 .loadmore_wrap_style {
     position: relative;
@@ -231,17 +231,13 @@ header {
     padding-left: 2em;
 }
 
-.doc-mar img,.doc-mar table tr td img {
+.doc-mar img, .doc-mar table tr td img {
     width: 15px;
-}
-
-header nav ul li.hover-menu:hover .sub-menu li {
-    display: block;
 }
 
 header nav ul li.hover-menu:hover .sub-menu {
     display: block;
-    min-width: 184px;
+    min-width: 150px;
     margin: 0;
     padding: 2.5em 0 10px 0;
 }
@@ -258,9 +254,12 @@ header nav ul li.hover-menu a {
     padding: 0;
     margin: 0;
 }
-.doc-search-item {     display: block;
+
+.doc-search-item {
+    display: block;
     font-size: 18px;
-    margin: -4px 0;}
+    margin: -4px 0;
+}
 
 .sec-docs-area-search {
     background-color: #fff;
@@ -268,7 +267,11 @@ header nav ul li.hover-menu a {
     padding-top: 4em;
     padding-bottom: 4em;
 }
-.no-padding {margin: 0 -11px;}
+
+.no-padding {
+    margin: 0 -11px;
+}
+
 .sec-docs-area {
     padding-top: 6em;
     padding-bottom: 6em;
@@ -278,11 +281,20 @@ header nav ul li.hover-menu a {
 .sec-docs-area .sec-updates-2 .simple-table table tr td {
     padding: 0.75em 1em;
 }
-.width-100 { width:100%; text-align: center;}
+
+.width-100 {
+    width: 100%;
+    text-align: center;
+}
+
 header nav ul li.active {
     border: 2px solid #e2e8f0;
 }
+
 .inner header nav ul li.active {
-     border: 2px solid #fff;
+    border: 2px solid #fff;
 }
-header nav ul .hover-menu a:hover {color: #fff;}
+
+header nav ul .hover-menu a:hover {
+    color: #fff;
+}

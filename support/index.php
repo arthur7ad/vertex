@@ -13,7 +13,7 @@ $APPLICATION->SetTitle("Поддержка");
                         <p>На связи с вами 24/7</p>
                     </div>
                     <div>
-                        <a href="/" class="more">написать</a>
+                        <a href="javascript:void(0)" onclick="b24Chat();" class="more">написать</a>
                     </div>
                 </div>
             </li>
@@ -24,7 +24,7 @@ $APPLICATION->SetTitle("Поддержка");
                         <h3>Служба техподдержки</h3>
                     </div>
                     <div>
-                        <a href="/" class="more">отправить</a>
+                        <a href="javascript:void(0)" onclick="b24Form();" class="more">отправить</a>
                     </div>
                 </div>
             </li>
@@ -65,12 +65,12 @@ $APPLICATION->SetTitle("Поддержка");
         </div>
     </section>
 
-<? $APPLICATION->IncludeComponent(
+<?
+$APPLICATION->IncludeComponent(
     "verter:main.feedback",
     "form-functions",
     array(
         "AJAX_MODE" => "Y",
-        "EMAIL_TO" => "test@test.ru",
         "EVENT_MESSAGE_ID" => array(),
         "OK_TEXT" => "Ваше сообщение отправлено.",
         "REQUIRED_FIELDS" => array("NAME", "EMAIL", "PHONE"),
